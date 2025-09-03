@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Use Inter from Google Fonts
-const inter = Inter({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  variable: "--font-inter",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Marlbro Security",
-  description:
-    "Marlbro Security has built a solid reputation as one of Pakistan’s most reliable and professional security services providers.",
+  description: "Marlbro Security has built a solid reputation as one of Pakistan’s most reliable and professional security services providers.",
 };
 
 export default function RootLayout({
@@ -21,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

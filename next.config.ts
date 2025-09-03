@@ -1,22 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Required for GitHub Pages
-  output: 'export',
+import type { NextConfig } from "next";
 
-  // Must match your repo name
-  basePath: '/marlbrowebsite',
-  assetPrefix: '/marlbrowebsite/',
-
-  // Export into /out folder
-  distDir: 'out',
-
-  // Ensure proper routing
-  trailingSlash: true,
-
-  // Disable Next.js image optimization (GitHub Pages doesn’t support it)
+const nextConfig: NextConfig = {
+  output: "export",
+  exporttrailingSlash: true,
   images: {
     unoptimized: true,
-  },
+  }
+  
 };
 
 export default nextConfig;
