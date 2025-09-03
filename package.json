@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://halconsystems.github.io/marlbrowebsite/",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "deploy": "next build && next export && gh-pages -d out"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "deploy": "next build && gh-pages -d out"
+},
+
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

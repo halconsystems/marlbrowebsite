@@ -1,12 +1,12 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  distDir: 'out',
+  output: "export",
+  basePath: "/marlbrowebsite",  // repo name
+  assetPrefix: "/marlbrowebsite/",
   trailingSlash: true,
-  assetPrefix: './',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
 };
 
