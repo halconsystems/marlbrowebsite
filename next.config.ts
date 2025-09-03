@@ -2,6 +2,8 @@
 const nextConfig = {
   // Required for GitHub Pages
   output: 'export',
+
+  // Must match your repo name
   basePath: '/marlbrowebsite',
   assetPrefix: '/marlbrowebsite/',
 
