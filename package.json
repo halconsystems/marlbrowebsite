@@ -1,11 +1,13 @@
 {
-  "name": "security-app",
+  "name": "marlbro-security",
   "version": "0.1.0",
-  "private": true, "homepage": "https://www.marlbrosecurity.com/",
+  "private": true,
+  "homepage": "https://halconsystems.github.io/marlbrowebsite/",
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "deploy": "gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -22,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
