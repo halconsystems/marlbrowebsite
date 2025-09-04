@@ -10,7 +10,7 @@ export default function Navbar() {
 const handleNavigate = () => {
   const companyName = "MarlBoro Security";
   const encodedCompanyName = encodeURIComponent(companyName);
-  window.location.href = `https://www.guardsos.com/login?company=${encodedCompanyName}`;
+  window.location.href = `https://portal.guardsos.com/login`;
 };
 
 
